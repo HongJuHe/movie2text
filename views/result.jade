@@ -1,0 +1,14 @@
+doctype html
+head
+  include ./head.jade
+br
+-var img = result.img;
+-var document = result.doc;
+section#services.page-section
+  .container
+    .text-center
+      h2.section-heading.text-uppercase File upload complete
+      img.img-fluid(src = img, height='500', width='500')
+      h3(align='center')
+          a.btn(href= document, download='', align='center')
+            u Click for download
